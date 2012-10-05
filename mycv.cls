@@ -110,9 +110,9 @@
 %\EduDetails must be used in order to enter stuff in here
 \newenvironment{EducationTable}{%
   \begin{center}%
-    \begin{tabular*}{.91\textwidth}{|m{.28\textwidth} | >{\centering\arraybackslash}m{.31\textwidth} | c | c |}%
+    \begin{tabular*}{.97\textwidth}{|m{.36\textwidth} | >{\centering\arraybackslash}m{.31\textwidth} | c | c |}%
       \hline 
-      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Year of completion} \\ \hline
+      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Completion Year } \\ \hline
 }
 {\end{tabular*}%
 \end{center}%
