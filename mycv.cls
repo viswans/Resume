@@ -160,7 +160,7 @@
 \newcommand{\Point}[1]{%
   \subsubsection{}%
   \raggedright
-  \hangindent=3.45em\hangafter=1\noindent%
+  \hangindent=2.70em\hangafter=1\noindent%
   \ifTwoColumn
     \parbox[t]{.4\textwidth}{#1}
   \else#1%
