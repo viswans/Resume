@@ -48,7 +48,7 @@
   \end{minipage}
   \begin{minipage}[.3\textwidth]{0.4\textwidth}
     \raggedleft
-    \includegraphics[width=.3\textwidth]{logo.png} %Insti logo
+    \includegraphics[height=.2\textwidth]{logo.png} %Insti logo
   \end{minipage}
   \\[.5em] 
   \begin{minipage}{.33\textwidth}
@@ -99,9 +99,9 @@
 %and the indentation just before the title for runin
 %The second parameter specifies the vertical space before the title
 %The third parameter specifies the separation between title and text
-\titlespacing{\section}{0em}{1em}{1em}
+\titlespacing{\section}{0em}{.8em}{.8em}
 \titlespacing{\subsection}{0em}{.5em}{.25em}
-\titlespacing{\subsubsection}{1.5em}{.25em}{.75em}
+\titlespacing{\subsubsection}{1.5em}{.15em}{.25em}
 
 
 
@@ -110,7 +110,7 @@
 %\EduDetails must be used in order to enter stuff in here
 \newenvironment{EducationTable}{%
   \begin{center}%
-    \begin{tabular*}{.915\textwidth}{|m{.28\textwidth} | >{\centering\arraybackslash}m{.31\textwidth} | c | c |}%
+    \begin{tabular*}{.91\textwidth}{|m{.28\textwidth} | >{\centering\arraybackslash}m{.31\textwidth} | c | c |}%
       \hline 
       {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Year of completion} \\ \hline
 }
