@@ -101,7 +101,7 @@
 %The third parameter specifies the separation between title and text
 \titlespacing{\section}{0em}{.8em}{.8em}
 \titlespacing{\subsection}{0em}{.5em}{.25em}
-\titlespacing{\subsubsection}{1.5em}{.15em}{.25em}
+\titlespacing{\subsubsection}{1.5em}{.25em}{.25em}
 
 
 
