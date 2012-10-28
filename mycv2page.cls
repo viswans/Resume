@@ -118,12 +118,22 @@
 %\EduDetails must be used in order to enter stuff in here
 \newenvironment{EducationTable}{%
   \begin{center}%
-    \begin{tabular*}{\textwidth}{p{.25\textwidth} c c r}%
-      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Year of completion} \\[.75em] %
+    \begin{tabular*}{.95\textwidth}{|m{.37\textwidth} | >{\centering\arraybackslash}m{.25\textwidth} |  >{\centering\arraybackslash}m{0.09\textwidth} | c |}%
+      \hline 
+      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Completion Year } \\ \hline
 }
 {\end{tabular*}%
 \end{center}%
 }
+
+% \newenvironment{EducationTable}{%
+%   \begin{center}%
+%     \begin{tabular*}{\textwidth}{p{.25\textwidth} c c r}%
+%       {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Year of completion} \\[.75em] %
+% }
+% {\end{tabular*}%
+% \end{center}%
+% }
       
 %Create a new environment specifically for course related content
 \newenvironment{Course}{%
@@ -212,5 +222,5 @@
 %Define the \EduDetails command that must be used inside an Education
 %environment defined above
 \newcommand{\EduDetails}[4]{%
-  {#1} & {#2} & {#3} & {#4} \\[.2em] %
+  {#1} & {#2} & {#3} & {#4} \\[.2em] \hline%
 }

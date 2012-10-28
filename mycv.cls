@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mycv}[2011/09/18 Insti Standard Template CV]
-%\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
+%\renewcommand{\normalsize}{\fontsize{10pt}{10pt}\selectfont}
 %\setlength{\textwidth}{6.5in}
 %\setlength{\textheight}{8in}
 
@@ -17,6 +17,11 @@
 \RequirePackage{multicol}
 \RequirePackage{multirow}
 \RequirePackage{array}
+
+%\setlength{\parskip}{0.15pt}
+%\setlength{\parsep}{0.15em}
+%\setlength{\topskip}{0.1em}
+%\setlength{\topsep}{0.1em}
 
 %Define fields that the user can set
 \makeatletter
@@ -48,7 +53,7 @@
   \end{minipage}
   \begin{minipage}[.3\textwidth]{0.4\textwidth}
     \raggedleft
-    \includegraphics[width=.3\textwidth]{logo.png} %Insti logo
+    \includegraphics[height=.2\textwidth]{logo.png} %Insti logo
   \end{minipage}
   \\[.5em] 
   \begin{minipage}{.33\textwidth}
@@ -99,9 +104,9 @@
 %and the indentation just before the title for runin
 %The second parameter specifies the vertical space before the title
 %The third parameter specifies the separation between title and text
-\titlespacing{\section}{0em}{1em}{1em}
-\titlespacing{\subsection}{0em}{.5em}{.25em}
-\titlespacing{\subsubsection}{1.5em}{.25em}{.75em}
+\titlespacing{\section}{0em}{.4em}{.4em}
+\titlespacing{\subsection}{0em}{.2em}{.15em}
+\titlespacing{\subsubsection}{1.5em}{.10em}{.1em}
 
 
 
@@ -110,9 +115,9 @@
 %\EduDetails must be used in order to enter stuff in here
 \newenvironment{EducationTable}{%
   \begin{center}%
-    \begin{tabular*}{.915\textwidth}{|m{.28\textwidth} | >{\centering\arraybackslash}m{.31\textwidth} | c | c |}%
+    \begin{tabular*}{.96\textwidth}{|m{.35\textwidth} | >{\centering\arraybackslash}m{.25\textwidth} |  >{\centering\arraybackslash}m{0.13\textwidth} | c |}%
       \hline 
-      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Year of completion} \\ \hline
+      {\bf Program} & {\bf Institution} & {\bf \%/CGPA} & {\bf Completion Year } \\ \hline
 }
 {\end{tabular*}%
 \end{center}%
@@ -160,7 +165,7 @@
 \newcommand{\Point}[1]{%
   \subsubsection{}%
   \raggedright
-  \hangindent=3.45em\hangafter=1\noindent%
+  \hangindent=2.70em\hangafter=1\noindent%
   \ifTwoColumn
     \parbox[t]{.4\textwidth}{#1}
   \else#1%
