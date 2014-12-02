@@ -25,12 +25,10 @@
 
 %Define fields that the user can set
 \makeatletter
-  \newcommand{\RollNumber}[1]{\def \@RollNumber {#1}}
   \newcommand{\Address}[1]{\def \@Address {#1}}
   \newcommand{\PhoneNumber}[1]{\def \@PhoneNumber {#1}}
   \newcommand{\Email}[1]{\def \@Email {#1}}
   \newcommand{\CourseVar}[1]{\def \@CourseVar {#1}}
-  \RollNumber{}
   \Address{}
   \PhoneNumber{}
   \Email{}
@@ -44,32 +42,23 @@
   \thispagestyle{empty}
   \pagestyle{empty}
   \begin{minipage}[.3\textwidth]{0.6\textwidth}
-    \raggedright \vspace{2.5em} 
-    {\Large \scshape \@author {} $|$ \@RollNumber} %Puts name and roll number
+    \vspace{2.5em} 
+    {\Large \scshape \center \@author {} } %Puts name 
     \vspace{.5em}
-
-    {\large \scshape Indian Institute of Technology Madras} %Puts insti name
-    \vspace{.5em}
-  \end{minipage}
-  \begin{minipage}[.3\textwidth]{0.4\textwidth}
-    \raggedleft
-    \includegraphics[height=.2\textwidth]{logo.png} %Insti logo
   \end{minipage}
   \\[.5em] 
-  \begin{minipage}{.33\textwidth}
+  \begin{minipage}{.40\textwidth}
     \raggedright
     \@Address %Address of the student
   \end{minipage} 
-  \begin{minipage}{.33\textwidth}
-    \begin{center}
-      \@PhoneNumber %Phone number of the student
-    \end{center}
-  \end{minipage}
-  \begin{minipage}{.33\textwidth}
+  \begin{minipage}{.60\textwidth}
     \raggedleft
+    \@PhoneNumber %Phone number of the student
+    \\
     \@Email %Email id of the student
   \end{minipage}
-  \vspace{-.5em} \hrule
+  %\vspace{-.5em} 
+  \hrule
 }
 \makeatother
 
