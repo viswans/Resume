@@ -41,11 +41,13 @@
 \def \maketitle{%
   \thispagestyle{empty}
   \pagestyle{empty}
-  \begin{minipage}[.3\textwidth]{0.6\textwidth}
     \vspace{2.5em} 
-    {\Large \scshape \center \@author {} } %Puts name 
+    \begin{minipage}{\textwidth}
+      \begin{center}
+      {\Large \scshape \@author } %Puts name 
+      \end{center}
+    \end{minipage}
     \vspace{.5em}
-  \end{minipage}
   \\[.5em] 
   \begin{minipage}{.40\textwidth}
     \raggedright
@@ -58,7 +60,7 @@
     \@Email %Email id of the student
   \end{minipage}
   %\vspace{-.5em} 
-  \hrule
+  %\hrule
 }
 \makeatother
 
