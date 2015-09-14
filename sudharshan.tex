@@ -1,76 +1,116 @@
-\documentclass{mycv}
-\author{Sudharshan Viswanathan}
-\Address{320 Brown Street Apartment 517, West Lafayette Indiana 47906}
-\PhoneNumber{+1 508 654-1337}
-\Email{sudharshan.visu@gmail.com}
+    \documentclass[margin,line]{resume}
+    \usepackage{hyperref}
+    \usepackage{amsmath}
+    \usepackage{enumitem}
+    \usepackage{color}
+    \usepackage{verbatim}
+    \hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
 
 \begin{document}
-\maketitle
-\section{Professional Experience}
-\datedsubsection{Quantitative Developer, Morgan Stanley India, Mumbai}{2013- 2015}
-\Point{Implemented \textbf{Line Search minimization} methods separating callbacks from the minimization algorithm. Assisted an internship project in implementing Trust Region Strategies. Implementations to be used in Calibration use cases across the bank}
-\Point{Refactored proprietary Date Rolling Library - Developed a \textbf{Stateless Referentially 
-Transparent Immutable API} while removing the extant \textbf{Dependency} on \textbf{Singleton} pattern in C++.
-Extend functionality to Java using \textbf{SWIG}}
-\Point{Library Support and Maintenance - bug fixes and new additional features for the proprietary legacy Bond Analytics library while conforming 
-to industry standards}
-\Point{Integral part of the transition in the development environment of the team. Ensured backward compatibility of the build systems 
-and responsible for setting up and testing of software releases}
+    \begin{center}
+    \hspace{-80pt}
+    \Large \textbf{Sudharshan Viswanathan}\\
+    \hspace{-80pt}
+    \large Purdue University
+    \end{center}
 
-\datedsubsection{Internship, American Express India, Gurgaon}{May - July 2012}
-%\hspace{2em}\textit{Risk Modelling of Credit Card Customers based on Initial Transactions} \hfill 
-\Point{Leveraged the \textbf{Longitudinal Behaviour} of early transactions towards predicting \textbf{Short \& Long Term Risk} 
-- Model \textbf{2 times better risk} indication for early defaulters and \textbf{50 bps lower} for good customers than existing methods}
-\Point{Developed a system that extracts \textbf{risky/credit-worthy behaviour} and flags events across different markets worldwide}
+\begin{resume}
+% \maketitle
+    %__________________________________________________________________________________________________________________
+    % Contact Information    
+\vspace{-1mm}
+    \section{\mysidestyle Contact \\Information}
+   \begin{tabular}{l r}
+       \hspace{-10pt} 320 Brown Street, Apartment 517 &\hspace{150pt} \emph{Visa Status:} \hspace{-0.2em} F1 (Student) \\
+       \hspace{-10pt} West Lafayette, IN 47906        &\hspace{150pt} \emph{Email:} \href{mailto:viswans@purdue.edu}{viswans@purdue.edu}\\
+       \hspace{-10pt} \emph{Phone}: +1 508-654-1337   &\hspace{150pt} \emph{Skype ID:} \hspace{-0.2em} sudharshan.visu \\
+
+    \end{tabular}
+
+\section{\mysidestyle Objective}
+Seeking Internship as a Developer during Summer 2016.
+
+\section{\mysidestyle Professional Experience}
+        \textbf{Morgan Stanley India} \hfill \textbf{July 2013 - June 2015} \\
+        \emph{Quantitative Developer} \hfill Mumbai, India
+        \begin{itemize}[leftmargin=*]
+\item Date Rolling Library - Developed a \textbf{Stateless Referentially  Transparent Immutable API} while refactoring out the dependency on \textbf{Singleton} pattern within the library in C++. Extended functionality to Java using \textbf{SWIG}
+\item Bond Analytics Library - Implementation of feature requests and bug fixes for the proprietary legacy library while matching the industry numbers for the implementation.
+\item Implemented \textbf{Line Search minimization} methods separating callbacks from the minimization algorithm. Mentored an internship project in implementing Trust Region Strategies. Implementations to be used in Calibration scenarios across the bank
+% \item Integral part of the transition in the development environment of the team. Ensured backward compatibility of the build systems and responsible for setting up and testing of software releases
+\end{itemize}
+
+%     \textbf{American Express India} \hfill \textbf{May - July 2012} \\
+%     \emph{Internship} \hfill Gurgaon, India
+%     \begin{itemize}[leftmargin=*]
+% %\hspace{2em}\textit{Risk Modelling of Credit Card Customers based on Initial Transactions} \hfill 
+% \item Leveraged the \textbf{Longitudinal Behaviour} of early transactions towards predicting \textbf{Short \& Long Term Risk 
+% - Model \textbf{2 times better risk} indication for early defaulters and \textbf{50 bps lower} for good customers than existing methods}
+% \item Developed a system that extracts \textbf{risky/credit-worthy behaviour} and flags events across different markets worldwide
+% \end{itemize}
 
 %\datedsubsection{Insternship, Ittiam Technologies Pvt Ltd, Bangalore}{May - June 2011}
 %\hspace{2em}\textit{Low Density Parity Check(LDPC) models based on the IEEE 802.11n standard}\hfill 
-%\Point{\textbf{Implemented} a model for \textbf{Low Density Parity Check}(LDPC) error correcting codes - based on the IEEE 802.11n standard}
-%\Point{Disadvantages of the simple LDPC Encoder- Decoder realized. Proposed a suitable \textbf{Hardware structure} for implementing the LDPC Encoder and Decoder on chip}
+%\item \textbf{Implemented} a model for \textbf{Low Density Parity Check}(LDPC) error correcting codes - based on the IEEE 802.11n standard
+%\item Disadvantages of the simple LDPC Encoder- Decoder realized. Proposed a suitable \textbf{Hardware structure} for implementing the LDPC Encoder and Decoder on chip
 
 %\datedsubsection{Agent Technologies Pvt Ltd, Bangalore}{May - June 2010}
 %\hspace{2em}\textit{License Plate Extraction for Residential/Retail Usage}\hfill 
-%\Point{\textbf{Image Processing} using Basic Graph Theory. Modular library built in \texttt{C++} - used in extracting License Plate Details. Hit Rate of \textbf{70\%}}
+%\item \textbf{Image Processing} using Basic Graph Theory. Modular library built in \texttt{C++} - used in extracting License Plate Details. Hit Rate of \textbf{70\%}
 
-\section{Education \& Scholastic Achievements}
-%\begin{EducationTable}
-%	\EduDetails{\textbf{B.Tech}:Electrical Engineering \textbf{Minor}:Physics 
-%   \newline \textbf{M.Tech}:VLSI and Microelectronics 
-%   }{IIT Madras, Chennai}{\textbf {9.06} }{2013}
-%\end{EducationTable}
+\section{\mysidestyle Education}
+\textbf{Purdue University} \hfill \textbf{2015-Present} \\
+\emph{MS in Computer Science}
+    \vspace{2mm} \\
+\textbf{Indian Institute of Technology Madras (GPA: 9.06/10) } \hfill \textbf{2008-2013} \\
+\emph{B.Tech in Electrical Engineering, M.Tech in VLSI Design and Microelectronics} \\
+\emph{Final Year Project} Implemented and Analyzed the Block Based SSTA algorithm on different MT environments:  multi-core and in NVidia GPUs using CUDA while tackling constraints of CUDA architecture. Achieved performance only comparable to serial implementations due to memory bottlenecks.
 
-\datedsubsection{Indian Institute of Technology Madras}{2008-2013}
-\Point{\textbf{Major}: Electrical Engineering \textbf{Masters}: VLSI Design and Microelectronics \textbf{Minor}: Physics \textbf{CGPA: 9.06/10} }
-\Point{\textbf{Technical Skills}. Prog. Languages - Advanced: C++, Verilog. Basic: Java, Scala, Python}
-\Point{Winner of \textbf{TAU Contest}(Variation aware timing) 2012-13. Implemented a multi-threaded Statistical Timing Tool for multi-core CPU architecture. \textit{Team Size}: 2}
-%\Point{Recipient of \textbf{Central Scheme Sector Scholarship} sponsored by the \textbf{MHRD} for excelling in XII CBSE examinations}
-\Point{Selected to represent IIT Madras in the \textbf{Indo-German Winter Academy} conducted in December 2011 by IIT Delhi-FAU Erlangen. Presented a Technical Talk on \textbf{Resistive Memory Devices}}
-\Point{Selected for the \textbf{International Olympiad in Informatics Training Camp}. Ranked in \textbf{top 25} at the Indian National Olympiad For Informatics(\textbf{INOI})}
-%\Point{\textbf{First} in the Physics Talent Test in January 2008 conducted by The Physics Society, Chennai among \textbf{618} students}
+\section{\mysidestyle Technical \\ Skills} 
+Advanced proficiency: C++ \\
+Basic proficiency: Java, Scala, Python, PHP
 
-\section{Projects}
-\datedsubsection{Final Year Project}{2012-2013}
-\Point{Statistical Static Timing Analysis Model(\textbf{SSTA}) based timing algorithms on a GP-GPU - 
-Explored features, methods and drawbacks of different implementations of the algorithm}
-\Point{Implemented and Anaylsed the Block Based SSTA algorithm on different MT environments:  \textbf{multi-core} and in \textbf{NVidia GPUs} using CUDA while
-tackling constraints of CUDA architecture}
+% \section{\mysidestyle Projects}
+% \begin{itemize}[leftmargin=*]
+% \item Statistical Static Timing Analysis Model (SSTA) based timing algorithms on a GP-GPU - Explored features, methods and drawbacks of different implementations of the algorithm
+% \end{itemize}
 
-\datedsubsection{Course Projects}{2010-2012}
-\Point{Digital VLSI: A Pipelined and Sliding-Window Canny Edge Detector on FPGA (\textit{CAD For VLSI Design}). 
-Reciprocal and Square Root of Complex Numbers using spline interpolation on FPGA (\textit{DSP Architectures})}
+\section{\mysidestyle Achievements}
+    \vspace{-0.0mm}
+\begin{itemize}[leftmargin=*]
+\item Winner of \href{https://sites.google.com/site/taucontest2013}{\textbf{TAU Contest}}(Variation aware timing contest) 2013 amongst 7 participating international teams. Implemented a multi-threaded Statistical Timing Tool to run on multi-core CPU architecture.
+\item Selected for the \textbf{International Olympiad in Informatics Training Camp} in India. Ranked in \textbf{top 25} at the Indian National Olympiad For Informatics.
+\item Selected to represent IIT Madras in the \textbf{Indo-German Winter Academy} conducted in December 2011 by IIT Delhi-FAU Erlangen. Presented a Technical Talk on \textbf{Resistive Memory Devices}
+%\item \textbf{First} in the Physics Talent Test in January 2008 conducted by The Physics Society, Chennai among \textbf{618} students
+%\item Recipient of \textbf{Central Scheme Sector Scholarship} sponsored by the \textbf{MHRD} for excelling in XII CBSE examinations
+\end{itemize}
 
-\section{Positions Of Responsibility}
-\datedsubsection{Core, Web And Mobile Operations, Shaastra}{May-October 2011}
-\Point{Led a team of 20 coordinators to completely rebuild website for Shaastra, annual technical festival of IIT Madras - in 2 months with \textbf{custom backend} - improved ease of use for Event Coordinators and Participants}
-\Point{Laid the foundations for an in-house \textbf{Enterprise Resource Planning}(ERP) system for the entire team of 300 students}
 
-\subsection{Core, Election Engineering Team}
-\Point{Led the Election Engineering team for the Student Body Elections 2011. Implemented a \textbf{Secure Web Based Voting} for a 5000-strong electorate across 20 polling stations}
+% \datedsubsection{Course Projects}{2010-2012}
+% \item Digital VLSI: A Pipelined and Sliding-Window Canny Edge Detector on FPGA (\textit{CAD For VLSI Design).
+% Reciprocal and Square Root of Complex Numbers using spline interpolation on FPGA (\textit{DSP Architectures})}
 
-\section{Extra Curricular Activities}
-\Point{Integral part of Morgan Stanley Cricket team in Corporate Leagues.}
-\Point{Trained in Vocal Carnatic Music. Participated in Solo Vocal competitions held in IIT Madras.}
-%\Point{Won $3^{rd}$ in Online Programming Contest, Exebit 2009, technical festival by CS Dept of IIT Madras. 
+\section{\mysidestyle Positions Of Responsibility}
+\textbf{Web And Mobile Operations, Shaastra}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+\item Led a team of 20 coordinators to completely rebuild website for Shaastra, annual technical festival of IIT Madras - in 2 months with \textbf{custom backend} - improved ease of use for Event Coordinators and Participants
+\item Laid the foundations for an in-house \textbf{Enterprise Resource Planning}(ERP) system for the organizing team of 300 students
+\end{itemize}
+
+\textbf{Election Engineering Team, IIT Madras}
+\vspace{1mm}
+\begin{itemize}[leftmargin=*]
+\item Led the Election Engineering team for the Student Body Elections 2011. Implemented a \textbf{Secure Web Based Voting} for a 5000-strong electorate across 20 polling stations
+\end{itemize}
+
+\section{\mysidestyle Extra Curricular Activities}
+\begin{itemize}[leftmargin=*]
+\item Trained in Vocal Indian Classical Music. Participated in solo competitions held in IIT Madras.
+\item Integral part of the Morgan Stanley Cricket team in Corporate Leagues.
+%\item Won $3^{rd$ in Online Programming Contest, Exebit 2009, technical festival by CS Dept of IIT Madras.
 %Simulation Championship- Won $2^{nd}$ and $3^{rd}$ in Shaastra 2010, Shaastra 2009 respectively}
+\end{itemize}
+\end{resume}
 \end{document}
 
